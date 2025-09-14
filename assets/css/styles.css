@@ -46,7 +46,7 @@ section {
     box-shadow: 0 2px 8px LightGray;
 }
 .header-image {
-    background-image: url('C:/Users/Admin/OneDrive/Desktop/Portfolio/Portfolio/assets/image/javaDeveloper.jpg');
+    background-image: url('assets/image/javaDeveloper.jpg');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -59,7 +59,7 @@ section {
   color: var(--text-sub);
 }
 .profile-photo {
-    background-image: url('C:/Users/Admin/OneDrive/Desktop/Portfolio/Portfolio/assets/image/profile.jpeg');
+    background-image: url('assets/image/profile.jpeg');
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -142,7 +142,7 @@ footer.bg-primary {
 .hero-section {
   position: relative;
   height: 60vh;
-  background: url('../image/javaDeveloper.jpg') no-repeat center center/cover;
+  background: url('assets/image/javaDeveloper.jpg') no-repeat center center/cover;
   color: black;
   text-decoration: black;
   text-shadow: #ECF0F1;
@@ -183,3 +183,4 @@ footer.bg-primary {
   border-radius: 50%;
   border: 4px solid #E67E22;
 }
+
