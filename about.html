@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Me | Karthik Kumar</title>
+  <title>About Me | Alugala Karthik Kumar</title>
   <meta name="description" content="About Alugala Karthik Kumar, aspiring Java Developer with a B.Tech electronics background." />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="C:/Users/Admin/Desktop/Portfolio/Portfolio/assets/css/styles.css" rel="stylesheet"/>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Karthik Kumar</a>
+      <a class="navbar-brand" href="index.html"><img src="C:/Users/Admin/OneDrive/Desktop/Portfolio/Portfolio/assets/image/profile.jpeg" alt="Alugala Karthik Kumar" style="width:48px; height:48px; border-radius:50%; object-fit:cover; border:2px solid #f77110;">
+        Alugala Karthik Kumar</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -24,13 +28,41 @@
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item">
+          <a class="nav-link active" href="viewfile.html">
+            <span class="iconify me-1" data-icon="mdi:home" data-inline="false"></span> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html">
+            <span class="iconify me-1" data-icon="mdi:information" data-inline="false"></span> About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="projects.html">
+            <span class="iconify me-1" data-icon="mdi:folder" data-inline="false"></span> Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="resume.html">
+            <span class="iconify me-1" data-icon="mdi:file-document" data-inline="false"></span> Resume
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="testimonials.html">
+            <span class="iconify me-1" data-icon="mdi:account-multiple" data-inline="false"></span> Testimonials
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="blog.html">
+            <span class="iconify me-1" data-icon="mdi:rss" data-inline="false"></span> Blog
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact.html">
+            <span class="iconify me-1" data-icon="mdi:email" data-inline="false"></span> Contact
+          </a>
+        </li>
         </ul>
       </div>
     </div>
@@ -40,8 +72,7 @@
     <h1 class="mb-4 text-center">About Me</h1>
     <div class="row align-items-center">
       <div class="col-lg-4 text-center mb-4 mb-lg-0">
-        <img src="https://github.com/Alugalakarthik/Portfolio/blob/main/assets/image/profile.jpeg
-" alt="Alugala Karthik Kumar" class="profile-photo rounded-circle" style="max-width: 100%; height: auto;">
+         <img src="C:/Users/Admin/OneDrive/Desktop/Portfolio/Portfolio/assets/image/profile.jpeg" alt="Alugala Karthik Kumar" class="profile-photo rounded-circle mb-3" style="width: 400px; height: 400px; object-fit: cover; border: 4px solid #E67E22;" />
       </div>
         <div class="col-lg-8 ps-lg-4">
           <p>
@@ -79,6 +110,16 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  const currentPage = window.location.pathname.split("/").pop(); // gets current page filename
+  const navLinks = document.querySelectorAll(".nav-link");
+  
+  navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if (linkPage === currentPage) {
+      link.classList.add("active"); // add active class to current page link
+    }
+  });
+</script>
 </body>
-
 </html>
