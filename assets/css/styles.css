@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+:root {
+  --color-primary: #2C3E50;
+  --color-accent: #E67E22;
+  --color-bg: #0eb113;
+  --color-text-dark: #2C3E50;
+  --color-text-light: #ECF0F1;
+}
+body {
+  background-color: rgb(16, 180, 35);
+  font-family: 'Roboto', sans-serif;
+  color: lightgray;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-primary);
+}
+.navbar {
+    background: SteelBlue;
+    padding: 0.5rem 2rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 10px LightGray;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.navbar a {
+    color: White;
+    font-weight: bold;
+    font-size: 1.15rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.navbar a:hover {
+    color: LightSteelBlue;
+}
+section {
+    background: rgb(23, 200, 40);
+    padding: 40px;
+    border-radius: 16px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px LightGray;
+}
+.header-image {
+    background-image: url('C:/Users/Admin/OneDrive/Desktop/Portfolio/Portfolio/assets/image/javaDeveloper.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-radius: 16px 16px 0 0;
+}
+.skills-list {
+  list-style-type: square;
+  padding-left: 24px;
+  font-size: 1.12em;
+  color: var(--text-sub);
+}
+.profile-photo {
+    background-image: url('C:/Users/Admin/OneDrive/Desktop/Portfolio/Portfolio/assets/image/profile.jpeg');
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid SteelBlue;
+    background-size: cover;
+    background-position: center;
+    background-color: #E67E22;
+    margin: 20px auto;
+    display: block;
+}
+a {
+  color: var(--color-accent);
+}
+a:hover {
+  color: var(--color-primary);
+}
+.btn-primary {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+section {
+  padding: 60px 0;
+}
+.container {
+  max-width: 1140px;
+}
+img.profile-photo {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #E67E22;
+}
+
+.project-thumbnail {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #ECF0F1;
+}
+.navbar-nav .nav-link {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #ECF0F1;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #E67E22;
+}
+.iconify {
+  vertical-align: middle;
+  color: #ECF0F1;
+}
+footer.bg-primary {
+  background-color: #2C3E50 !important;
+  color: #ECF0F1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+}
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+.hero-section {
+  position: relative;
+  height: 60vh;
+  background: url('../image/javaDeveloper.jpg') no-repeat center center/cover;
+  color: black;
+  text-decoration: black;
+  text-shadow: #ECF0F1;
+  text-size-adjust: auto;
+}
+.hero-section .overlay {
+  font-size: 1.5rem;           /* Large for visibility */
+  font-weight: bold;           /* Make text bold */
+  color: #fff;                 /* White text */
+  background: rgba(0,0,0,0.5); /* Semi-transparent black for contrast */
+  padding: 18px 32px;          /* Space around text */
+  border-radius: 10px;         /* Rounded corners */
+  box-shadow: 0 4px 32px #0005;/* Subtle outer shadow */
+  text-align: center;          /* Center text */
+  max-width: 600px;            /* Restrict width for aesthetics */
+  margin: 0 auto 40px auto;    /* Center horizontally, space below */
+  position: relative;          /* Stay above background but inside section */
+  z-index: 2;                  /* Ensure visible over bg if layering used */
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 20px;
+  color: white;
+}
+.hero-content blockquote {
+  color: white;
+}
+.blockquote-footer {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+.profile-photo {
+  width: 400px;
+  height: 400px;
+  object-fit: cover; 
+  border-radius: 50%;
+  border: 4px solid #E67E22;
+}
